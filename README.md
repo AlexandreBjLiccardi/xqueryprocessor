@@ -71,3 +71,8 @@ considère que c’est la dernière déclaration qui écrase la précédente.
 Ce fonctionnement, relevant du traitement des listes de JAVA n’est 
 cependant pas garanti. L’unicité des variables déclarées DOIT donc 
 être respectée.
+
+## Fichiers et classes
+- commons.CasterCommons.class : méthodes, pour la plupart statiques, utilisées pour des tâches classiques de transformation de formats de varaibles ("cast de types").
+- launcher.Main.class : lancement des procédures (main)
+- launcher.XqueryTest2.class : classe d'exécution des processus, relatifs aux xQuery.
