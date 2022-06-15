@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fr.afbiodiversite</groupId>
+  <artifactId>reporting2022</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <repositories>
+	</repositories>
+   <!-- Global properties. -->
+    <properties>
+ 		<wild.version>0.0.1-SNAPSHOT</wild.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <saxonhe.version>9.9.0-1</saxonhe.version>
+        <jopendocument.version>1.3</jopendocument.version>
+        <cnet.version>3.3</cnet.version>
+		<clang.version>2.6</clang.version>
+   </properties>
+  
+   <!-- Active dependencies. -->
+        <dependencies>
+        	
+			<dependency>
+                <groupId>net.sf.saxon</groupId>
+				<artifactId>Saxon-HE</artifactId>
+                <version>${saxonhe.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.sf.saxon</groupId>
+				<artifactId>Saxon-HE</artifactId>
+                <version>${saxonhe.version}</version>
+                <classifier>xqj</classifier>
+            </dependency>
+            
+            <dependency>
+			    <groupId>org.jopendocument</groupId>
+			    <artifactId>jOpenDocument</artifactId>
+			    <version>${jopendocument.version}</version>
+			</dependency>
+			
+			<dependency>
+                <groupId>commons-net</groupId>
+                <artifactId>commons-net</artifactId>
+                <version>${cnet.version}</version>
+            </dependency>
+			 <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>${clang.version}</version>
+            </dependency>
+			
+        </dependencies>
+
+</project>
