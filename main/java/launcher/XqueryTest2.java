@@ -84,7 +84,7 @@ public class XqueryTest2 {
 				XQResultSequence result = exp.executeQuery();	
 				out_File.getParentFile().mkdirs();
 				out_FileOutPut = new FileOutputStream(out_File);
-				while (result.next()) out_FileOutPut.write(CasterCommons.cast_xmlUnescape(result.getItemAsString(null)).getBytes());
+				while (result.next()) out_FileOutPut.write(CasterCommons.cast_xmlUnescape(result.getItemAsString(null)).getBytes("UTF8"));
 				
 			}catch(Exception e){
 				e.printStackTrace();
